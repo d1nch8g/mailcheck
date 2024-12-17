@@ -51,7 +51,7 @@ func main() {
 
 	err = d.DialAndSend(mes)
 	if err != nil {
-		fmt.Printf("unable to send email notification: %+v", err)
+		fmt.Printf("unable to send email notification: %+v\n", err)
 		os.Exit(1)
 	}
 	fmt.Println("checked successfully, email is ready.")
